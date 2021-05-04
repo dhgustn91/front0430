@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=f, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="boardwrite" method="get">
+        제목:<input type="text" name="btitle" value="제목입니다." readonly><br>
+        작성자:<input type="text" name="bwriter" placeholder="작성자"><br>
+        비밀번호:<input type="text" name="bpassword" placeholder="비밀번호를 입력하세요"><br>
+
+        카테고리:
+        <select name="bcategory">
+            <option selected>카테고리 선택:</option>
+            <option value="study">공부</option>
+            <option value="travel">여행</option>
+            <option value="habit">취미</option>
+        </select>
+
+        내용: <textarea name="bcontents" rows="30" cols="100"></textarea><br>
+
+        전체공개여부:
+        <input type="radio" id="yes" name="bopen" value="yes">예
+        <input type="radio" id="no" name="bopen" value="no">아니오<br>
+
+        <!-- form 태그 내에 있는 button 태그는 submit 역할을 한다.-->
+        <input type="submit" value="작성 완료">
+        <button>글작성버튼</button>
+    </form>
+    
+</body>
+</html>

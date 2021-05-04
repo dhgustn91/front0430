@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/82fbff9c34.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+        a:visited{
+            color: purple;
+        }
+        a:hover{
+            color: red;
+        }
+
+        table{
+            width: 30%;
+            border: 3px solid red;
+        }
+        td{
+            border: 3px solid red;
+        }
+        .b{
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p style="color: red;">빨간색 글자는 모두 안내문구 이며 p태그로 작성함.</p>
+        <p style="color: red;">각 영역은 div로 구성함.</p>
+    </div>
+
+    <div style="border: 5px solid green;">
+        <p>
+            <b>intro 영역</b>
+        </p>
+        <p>
+            <b style="font-size: 30px;">My Homepage</b>
+        </p>
+        <img src="/img/google.png" style="width: 200px;height: 100px;">
+        <p>
+            <b style="font-size: 10px;">구글 사진입니다.</b>
+        </p>
+    </div>
+
+    <div style="border: 5px solid purple;">
+        <p>
+            <b>contents 영역</b>
+        </p>
+        <p>
+            <b style="font-size: 25px;">현재 관심분야</b>
+        </p>
+        <ul type="disc">
+        <li>java <img src="/img/자바.png" style="width: 80px;height: 50px;"></li>
+        <li>frontend</li>
+        <li>백엔드 개발자</li>
+        <li>
+            <a href="https://www.google.co.kr" target="_blank">
+                구글링
+            </a>
+        </li>
+        <li>
+            <a href="https://www.instagram.com/" target="_self">
+            <i class="fab fa-instagram" style="color: purple; font-size: 40px;"></i>
+            </a>
+            인스타그램 이동
+        </li>
+    </ul>
+    </div>
+
+    <div style="border: 5px solid blue;">
+        <p><b>schedule 영역</b></p>
+        <p><b style="font-size: 25px;">주요 일정</b></p>
+
+        <table class="b">
+            <caption align="center">계획</caption>
+            <tr align="center">
+                <td><b>7월</b></td>
+                <td><b>9월</b></td>
+                <td><b>10월</b></td>
+            </tr>
+            <tr align="center">
+                <td>프로젝트</td>
+                <td>수료 및 구직활동</td>
+                <td>직장인</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
